@@ -1,0 +1,18 @@
+.col-6.card
+    h2.card-header Burger Order
+    .order-container.card-body
+
+.col-6.card
+    h2.card-header Devoured Burgers
+    .devoured-container.card-body
+
+.col.card
+    h2.card-header Add an Order
+    form.create-form.card-body#order-form
+        .form-group
+            label(for="new-burger") Burger Name:
+            input(type="text" name="name").new-burger
+        .form-group
+            label(for="new-customer") Customer Name:
+            input(type="text" name="name").new-customer
+        button.btn.btn-primary(type="submit") Add Order
